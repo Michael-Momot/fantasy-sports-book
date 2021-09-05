@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.header_spread {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.header_moneyline{
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.header_total {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.team1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.team2 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.team1odds {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.team2odds {
+  grid-row: 3;
+  grid-column: 2;
+}
+</style>
+</head>
+<body>
+
+<h1>Game Lines</h1>
+
+<div class="grid-container">
+  <div class="team1">Bears</div>
+  <div class="team1odds">+150</div>
+
+  <div class="team2">Packers</div>
+  <div class="team2odds">-110</div>
+</div>
+
+<hr>
+
+<h1>Bet Ticker</h1>
+
+
+
+</body>
+</html>
