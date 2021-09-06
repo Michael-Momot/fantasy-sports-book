@@ -57,18 +57,16 @@
         border-left: 1px solid #dfdfdf;
         border-bottom: 1px solid #dfdfdf;
       }
-</style>
 
-<h2>TESTTESTETST</h2>
-    <li ng-repeat="match in $ctrl.matches">
-        <div class="grid-container">
-            <team class="team1">{{match.team1.name}}</team>
-            <odds class="team1spread"><b>{{match.team1.spread}}
-            </b>{{match.team1.spreadOdds}}</odds>
-            <team class="team2">{{match.team2.name}}</team>
-            <odds class="team2spread"><b>{{match.team2.spread}}</b>{{match.team2.spreadOdds}}</odds>
-        </div>
-     </li>
+</style>
+<div class="grid-container" ng-repeat="match in $ctrl.matches">
+    <team class="team1">{{match.team1.name}}</team>
+    <odds class="team1spread"><b>{{match.team1.spread}}</b>{{match.team1.spreadOdds}}</odds>
+    <team class="team2">{{match.team2.name}}</team>
+    <odds class="team2spread"><b>{{match.team2.spread}}</b>{{match.team2.spreadOdds}}</odds>
+    <br>
+</div>
+
 
 
 
