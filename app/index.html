@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<html lang="en" ng-app="sportsBook">
 <head>
   <meta charset="utf-8">
   <title>Fantasy Football Sports Book</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="app.css" />
-
+  <script src="lib/angular/angular.js"></script>
+  <script src="app.module.js"></script>
+  <script src="match-list/match-list.module.js"></script>
+  <script src="match-list/match-list.component.js"></script>
 </head>
 
-<body>
-
-  <h1>For All Your Gambling Needs</h1>
-
-  </div>
-
-</body>
-
+  <body>
+    <h1>For All Your Gambling Needs</h1>
+    <match-list></match-list>
+  </body>
 </html>

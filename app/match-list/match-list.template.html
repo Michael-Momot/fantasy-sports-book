@@ -1,0 +1,74 @@
+<style>
+ .grid-container {
+        display: grid;
+        grid-template-columns: 100px 50px;
+        grid-template-rows: 50px 50px;
+      }
+      
+      .grid-container > team {
+        display: flex;           /* establish flex container */
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        font-weight: bold;
+       
+      }
+      
+      .grid-container > odds {
+        display: flex;           /* establish flex container */
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .team1 {
+        text-align: left;
+        grid-row: 1;
+        grid-column: 1;
+        padding-top: 25px 0;
+        border-top: 1px solid #dfdfdf;
+        border-left: 1px solid #dfdfdf;
+      }
+      
+      .team1spread{
+        grid-row: 1;
+        grid-column: 2;
+        border-top: 1px solid #dfdfdf;
+        border-right: 1px solid #dfdfdf;
+        border-left: 1px solid #dfdfdf;
+
+      }
+
+      .team2 {
+        grid-row: 2;
+        grid-column: 1;
+        border-top: 1px solid #dfdfdf;
+        border-left: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+        border-top: 1px solid #dfdfdf;
+      }
+      
+      .team2spread {
+        grid-row: 2;
+        grid-column: 2;
+        border-top: 1px solid #dfdfdf;
+        border-right: 1px solid #dfdfdf;
+        border-left: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+      }
+</style>
+
+<h2>TESTTESTETST</h2>
+    <li ng-repeat="match in $ctrl.matches">
+        <div class="grid-container">
+            <team class="team1">{{match.team1.name}}</team>
+            <odds class="team1spread"><b>{{match.team1.spread}}
+            </b>{{match.team1.spreadOdds}}</odds>
+            <team class="team2">{{match.team2.name}}</team>
+            <odds class="team2spread"><b>{{match.team2.spread}}</b>{{match.team2.spreadOdds}}</odds>
+        </div>
+     </li>
+
+
+
