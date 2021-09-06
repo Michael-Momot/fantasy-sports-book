@@ -1,2 +1,2 @@
 # fantasy-sports-book
-A website to display fantasy odds for degenerates.
+A website to display betting information for fantasy football leagues.
